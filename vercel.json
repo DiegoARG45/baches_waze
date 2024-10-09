@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "waze_dashboard.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "waze_dashboard.py"
+    }
+  ]
+}
